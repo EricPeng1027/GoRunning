@@ -25,21 +25,21 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="110dp"
-            android:text="注册"
+            android:text="Register"
             android:textSize="25dp" />
     </android.support.v7.widget.Toolbar>
 
 
     <EditText
+        android:id="@+id/username"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
 
+        android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="100dp"
         android:elevation="10dp"
-        android:id="@+id/username"
         android:ems="15"
-        android:hint="手机号码"
+        android:hint="Phone number"
 
         />
 
@@ -50,14 +50,14 @@
         android:orientation="horizontal">
 
         <EditText
+            android:id="@+id/code"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="10dp"
-            android:id="@+id/code"
             android:elevation="10dp"
             android:ems="10"
-            android:hint="验证码" />
+            android:hint="Code" />
 
         <Button
             android:id="@+id/getCode"
@@ -73,15 +73,15 @@
 
 
     <EditText
+        android:id="@+id/password"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="30dp"
-        android:id="@+id/password"
         android:elevation="10dp"
         android:ems="15"
 
-        android:hint="设置密码"
+        android:hint="Set Password"
 
         />
 

@@ -385,7 +385,7 @@ public class main extends Activity {
             Window window = alertDialog.getWindow();
             window.setContentView(R.layout.dialog_main_info);
             TextView tv_title = (TextView) window.findViewById(R.id.information);
-            tv_title.setText("Congratulations！！！ \n \nYou've run " + (int) totalDistance + "cmeters，Avg speed isc" + speed1 + "m/min，Spend " + (int) (time / 60) + "mins " + ((int) time - (int) (time / 60)) + "secs \n \n");
+            tv_title.setText("Congratulations！！！ \n \nYou've run " + (int) totalDistance + "meters，Avg speed isc" + speed1 + "m/min，Spend " + (int) (time / 60) + "mins " + ((int) time - (int) (time / 60)) + "secs \n \n");
 
 
             speed1 = 0;

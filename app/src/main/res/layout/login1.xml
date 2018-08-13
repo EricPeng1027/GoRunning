@@ -56,13 +56,13 @@
 
 
     <TextView
+        android:id="@+id/tryacount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+
         android:layout_gravity="end"
-
         android:layout_marginTop="50dp"
-        android:id="@+id/tryacount"
 
-        android:text="跳过注册进入试用" />
+        android:text="Skip as guest" />
 
 </LinearLayout>

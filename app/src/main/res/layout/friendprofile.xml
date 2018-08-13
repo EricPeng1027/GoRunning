@@ -20,7 +20,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_margin="10dp"
-        android:text="这是ta的主页"
+        android:text="This is his/her page"
         android:textSize="20dp" />
 
 
@@ -29,43 +29,43 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="昵称" />
+        android:text="Nickname" />
 
     <TextView
         android:id="@+id/p_class"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="学院" />
+        android:text="School" />
 
     <TextView
         android:id="@+id/p_mywords"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="个人签名" />
+        android:text="Signature" />
 
     <TextView
         android:id="@+id/p_totaldistance"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="跑步总距离" />
+        android:text="Total Running Distance" />
 
     <TextView
         android:id="@+id/p_totaltime"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="跑步总耗时" />
+        android:text="Total Running Time" />
 
     <TextView
         android:id="@+id/p_totalCount"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="跑步总次数" />
+        android:text="Total Running Times" />
 
     <TextView
         android:id="@+id/p_totalEnergy"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="消耗的总能量（折合脂肪： 公斤）" />
+        android:text="Calory lost（Weight Lost： kg）" />
 
 
     <Button
@@ -73,7 +73,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#722"
-        android:text="添加为好友" />
+        android:text="Add as Friend" />
 
     <Button
         android:id="@+id/startprivate"
@@ -81,6 +81,6 @@
 
         android:layout_height="wrap_content"
         android:background="#722"
-        android:text="发送消息" />
+        android:text="Send Message" />
 
 </LinearLayout>

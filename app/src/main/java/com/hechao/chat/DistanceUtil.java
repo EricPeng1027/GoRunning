@@ -1,7 +1,7 @@
 package com.hechao.chat;
 
 /**
- * Created by Administrator on 2016/4/8.
+ * Created by Administrator on 2018/7/10.
  */
 public class DistanceUtil {
 

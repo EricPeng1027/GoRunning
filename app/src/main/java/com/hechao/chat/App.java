@@ -10,7 +10,7 @@ import com.tencent.bugly.crashreport.CrashReport;
 import io.rong.imkit.RongIM;
 
 /**
- * Created by Administrator on 2016/3/25.
+ * Created by Administrator on 2018/7/10.
  */
 public class App extends Application {
 

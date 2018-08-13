@@ -17,7 +17,7 @@ import butterknife.InjectView;
 import cz.msebera.android.httpclient.Header;
 
 /**
- * Created by Administrator on 2016/4/17.
+ * Created by Administrator on 2018/7/10.
  */
 public class Myprofile extends Activity {
 
@@ -66,21 +66,21 @@ public class Myprofile extends Activity {
 
                     String p1=jsonObject.getString("name");
                     String p2=jsonObject.getString("sexual");
-                    textView1.setText("昵称："+p1+" ("+p2+")");
+                    textView1.setText("Nickname："+p1+" ("+p2+")");
                     String p3=jsonObject.getString("age");
 
                     String p4=jsonObject.getString("mywords");
-                    textView3.setText("个性签名："+p4);
+                    textView3.setText("Signature："+p4);
                     String p5=jsonObject.getString("class");
-                    textView2.setText("专业："+p5);
+                    textView2.setText("Major："+p5);
                     String p6=jsonObject.getString("totaldistance");
-                    textView4.setText("跑步总里程："+p6+"千米");
+                    textView4.setText("Total Distance："+p6+"km");
                     String p7=jsonObject.getString("totaltime");
-                    textView5.setText("投入时间："+p7+ "秒");
+                    textView5.setText("Time Spended："+p7+ "sec");
                     String p8=jsonObject.getString("totalenergy");
-                    textView7.setText("甩掉的肥肉："+p8+" 斤");
+                    textView7.setText("Weight lost："+p8+" g");
                     String p9=jsonObject.getString("totalrunning");
-                    textView6.setText("跑步总次数："+p9+" 次");
+                    textView6.setText("Total Running Times："+p9+" times");
 
 
 

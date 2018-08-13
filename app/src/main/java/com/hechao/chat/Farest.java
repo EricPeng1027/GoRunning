@@ -70,12 +70,12 @@ public class Farest extends Activity {
 
         AsyncHttpClient client = new AsyncHttpClient();
         String url = "http://" + App.ip + "/chat/getFarestUser.php";
-        Log.e("hechao",url);
+        Log.e("Eric",url);
         client.get(url, new AsyncHttpResponseHandler() {
             @Override
             public void onSuccess(int i, Header[] headers, byte[] bytes) {
                 String response = new String(bytes);
-                Log.e("hechao",response);
+                Log.e("Eric",response);
 
                 try {
                     JSONArray jsonArray = new JSONArray(response);

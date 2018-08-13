@@ -433,7 +433,7 @@ public class LoginActivity extends Activity {
         //    设置Title的图标
         builder.setIcon(R.drawable.rc_progress_sending_style);
         //    设置Title的内容
-        builder.setTitle("正在登陆");
+        builder.setTitle("Logining");
         builder.show();
 
 

@@ -1,7 +1,7 @@
 package com.hechao.chat;
 
 /**
- * Created by bingone on 15/12/16.
+ * Created by bingone on 2018/6/18.
  */
 
 import org.apache.http.HttpEntity;

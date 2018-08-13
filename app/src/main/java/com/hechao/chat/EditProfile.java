@@ -19,7 +19,7 @@ import butterknife.OnClick;
 import cz.msebera.android.httpclient.Header;
 
 /**
- * Created by Administrator on 2016/4/9.
+ * Created by Administrator on 2018/7/10.
  */
 public class EditProfile extends Activity {
 
@@ -105,7 +105,7 @@ public class EditProfile extends Activity {
             public void onSuccess(int i, Header[] headers, byte[] bytes) {
 
                 String response=new String(bytes) ;
-                Log.e("hechao",response);
+                Log.e("Eric",response);
 
             }
 

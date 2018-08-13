@@ -64,7 +64,7 @@ import io.rong.imkit.RongIM;
 import io.rong.imlib.RongIMClient;
 
 /**
- * Created by Administrator on 2016/4/9.
+ * Created by Administrator on 2018/7/10.
  */
 
 public class main extends Activity {
@@ -192,7 +192,7 @@ public class main extends Activity {
 
             TextView infor = new TextView(main.this);
             infor.setBackgroundResource(R.drawable.popup);
-            infor.setText("在你附近10km\n看看ta是谁");
+            infor.setText("Check people around you");
             infor.setTextColor(getResources().getColor(R.color.accent_material_dark));
 //            InfoWindow mInfoWindow = new InfoWindow(infor, pt,-47);
 
@@ -224,7 +224,7 @@ public class main extends Activity {
             personname.setText(extraInfo.getString("name"));
 //            personname.setText("呵呵哒");
 
-            personinfo.setText("瞄下ta的主页");
+            personinfo.setText("Check his/her page");
             personpic.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
@@ -287,7 +287,7 @@ public class main extends Activity {
                     Log.e("hechao", "NETWORK_UNAVAILABLE");
                     break;
                 case KICKED_OFFLINE_BY_OTHER_CLIENT://用户账户在其他设备登录，本机会被踢掉线
-                    Log.e("hechao", "用户账户在其他设备登录，本机会被踢掉线");
+                    Log.e("hechao", "User login elsewhere, loging out");
                     break;
             }
         }
@@ -310,7 +310,7 @@ public class main extends Activity {
 
                 @Override
                 public void onSuccess(String s) {
-                    Toast.makeText(main.this, "成功登陆", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(main.this, "Login Successfully", Toast.LENGTH_SHORT).show();
 
 
                 }
@@ -345,7 +345,7 @@ public class main extends Activity {
     @OnClick(R.id.start)
     void start() {
         runningstatus = !runningstatus;
-        start.setBackgroundResource(R.drawable.run1);
+        start.setBackgroundResource(R.drawable.run);
         textView = (TextView) findViewById(R.id.totalDistance);
         speed = (TextView) findViewById(R.id.speed);
 
@@ -385,7 +385,7 @@ public class main extends Activity {
             Window window = alertDialog.getWindow();
             window.setContentView(R.layout.dialog_main_info);
             TextView tv_title = (TextView) window.findViewById(R.id.information);
-            tv_title.setText("恭喜你完成本次跑步！！！ \n \n您这次共跑了" + (int) totalDistance + "米，平均速度为" + speed1 + "米每分钟，用时" + (int) (time / 60) + "分" + ((int) time - (int) (time / 60)) + "秒 \n \n");
+            tv_title.setText("Congratulations！！！ \n \nYou've run " + (int) totalDistance + "cmeters，Avg speed isc" + speed1 + "m/min，Spend " + (int) (time / 60) + "mins " + ((int) time - (int) (time / 60)) + "secs \n \n");
 
 
             speed1 = 0;
@@ -458,14 +458,14 @@ public class main extends Activity {
     void switchMap() {
 //        普通地图
         if (!isSwitched) {
-            s.setText("切换到卫星视图");
+            s.setText("Switch to satelite view");
             mBaiduMap.setMapType(BaiduMap.MAP_TYPE_NORMAL);
 
             isSwitched = !isSwitched;
         } else {
             mBaiduMap.setMapType(BaiduMap.MAP_TYPE_SATELLITE);
             isSwitched = !isSwitched;
-            s.setText("切换到经典视图");
+            s.setText("Switch to classic view");
         }
 
     }
@@ -638,21 +638,21 @@ public class main extends Activity {
 //                Toast.makeText(getApplicationContext(), "第" + i + "次跑了 " + d + " 米", Toast.LENGTH_SHORT).show();
 //                Toast.makeText(getApplicationContext(), "跑了 " + totalDistance + " 米", Toast.LENGTH_SHORT).show();
 
-                textView.setText("完成了： " + (int) totalDistance + " 米");
+                textView.setText("Finished： " + (int) totalDistance + " meters");
 
                 int min = ((int) ((n - currentTime) / 1000) / 60);
                 int sec = (int) ((n - currentTime) / 1000 - min * 60);
                 time = min * 60 + sec;
                 speed1 = Math.round(totalDistance / time * 100) / 100.0*60;
 
-                speed.setText("时间：" + min + "min" + sec + "sec  \n" + "速度：" + speed1 + " 米/分钟");
+                speed.setText("Time：" + min + "min" + sec + "sec  \n" + "Speed：" + speed1 + " m/min");
 
                 OverlayOptions ooPolyline = new PolylineOptions().width(20).color(0xAAFF0000).points(pts);
                 //添加到地图
                 mBaiduMap.addOverlay(ooPolyline);
             } else {
                 textView.setText("");
-                speed.setText("点击奔跑按钮开始 再次点击可停止");
+                speed.setText("Click to start running, Click again to stop");
             }
             pts.add(point);
 //            ArrayList<BitmapDescriptor> giflist = new ArrayList<BitmapDescriptor>();

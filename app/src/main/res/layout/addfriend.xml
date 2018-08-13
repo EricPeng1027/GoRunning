@@ -11,10 +11,9 @@
         />
 
     <Button
+        android:id="@+id/addFriendBtn"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="添加ta为我的好友"
-        android:id="@+id/addFriendBtn"
-        />
+        android:text="Add him/her as my friend" />
 
 </LinearLayout>

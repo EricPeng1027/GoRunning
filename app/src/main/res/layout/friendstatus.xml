@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
         android:background="#722"
-        android:text="跑友圈" />
+        android:text="Running Group" />
 
     <Button
         android:id="@+id/myrunnersfriends"
@@ -21,7 +21,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="3dp"
         android:background="#722"
-        android:text="我的好友" />
+        android:text="My Friends" />
 
     <Button
         android:id="@+id/runnerConversation"
@@ -30,7 +30,7 @@
         android:layout_margin="3dp"
 
         android:background="#722"
-        android:text="消息列表" />
+        android:text="Message List" />
 
     <Button
         android:id="@+id/farest"
@@ -39,7 +39,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="3dp"
         android:background="#722"
-        android:text="排行榜" />
+        android:text="Ranking List" />
 
 
 </LinearLayout>

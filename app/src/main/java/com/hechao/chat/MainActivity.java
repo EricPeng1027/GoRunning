@@ -150,7 +150,7 @@ public class MainActivity extends Activity {
 
                 @Override
                 public void onSuccess(String s) {
-                    Toast.makeText(MainActivity.this, "成功登陆", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this, "Login Successfully", Toast.LENGTH_SHORT).show();
                 }
 
                 @Override

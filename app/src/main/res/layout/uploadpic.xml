@@ -20,18 +20,18 @@
             android:src="@drawable/ic_launcher" />
 
         <Button
+            android:id="@+id/pics"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="图库"
-            android:id="@+id/pics"
+            android:text="Gallery"
 
             />
 
         <Button
+            android:id="@+id/camera"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/camera"
-            android:text="相机" />
+            android:text="Camera" />
 
 
 

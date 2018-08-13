@@ -6,11 +6,11 @@
     android:layout_height="match_parent">
 
     <Button
+        android:id="@+id/refresh"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:background="#822"
-        android:text="好友列表"
-        android:id="@+id/refresh" />
+        android:text="Friend List" />
 
 
     <ListView

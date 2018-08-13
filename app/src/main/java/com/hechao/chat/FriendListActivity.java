@@ -95,19 +95,19 @@ public class FriendListActivity extends Activity {
         AsyncHttpClient client = new AsyncHttpClient();
 
         String url = "http://"+App.ip+"/chat/getFriendList.php?username=" + App.username;
-        Log.e("hechao",url);
+        Log.e("Eric",url);
         client.get(url, new AsyncHttpResponseHandler() {
             @Override
             public void onSuccess(int i, Header[] headers, byte[] bytes) {
                 String response = new String(bytes);
-                Log.e("hechao", "friend list response:" + response);
+                Log.e("Eric", "friend list response:" + response);
                 friendList.clear();
 
                 try {
                     JSONArray array = new JSONArray(response);
                     for (int i1 = 0; i1 < array.length(); i1++) {
                         friendList.add((String) array.get(i1));
-                        Log.e("hechao", (String) array.get(i1));
+                        Log.e("Eric", (String) array.get(i1));
                     }
 
                     myAdapter.notifyDataSetChanged();
@@ -118,7 +118,7 @@ public class FriendListActivity extends Activity {
 
             @Override
             public void onFailure(int i, Header[] headers, byte[] bytes, Throwable throwable) {
-                Log.e("hechao", "friendlist is not inited ");
+                Log.e("Eric", "friendlist is not initiated ");
             }
         });
 

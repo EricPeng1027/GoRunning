@@ -15,7 +15,7 @@ import cz.msebera.android.httpclient.Header;
 
 /**
  * 添加好友列表
- * Created by Administrator on 2016/3/27.
+ * Created by Administrator on 2018/7/10.
  */
 public class AddFriendActivity extends Activity {
 
@@ -46,11 +46,11 @@ public class AddFriendActivity extends Activity {
                             Log.e("hechao","response->"+response);
                             if (response.contains("success")){
                                 Log.e("hechao","added success");
-                                Toast.makeText(AddFriendActivity.this,friendName.getText().toString()+" 已经成为你的好友",Toast.LENGTH_SHORT).show();
+                                Toast.makeText(AddFriendActivity.this,friendName.getText().toString()+" has become your friend",Toast.LENGTH_SHORT).show();
                             }
                             else {
                                 Log.e("hechao","error added");
-                                Toast.makeText(AddFriendActivity.this, "添加失败", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(AddFriendActivity.this, "Added Failed", Toast.LENGTH_SHORT).show();
                             }
 
 

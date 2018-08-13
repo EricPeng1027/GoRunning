@@ -19,43 +19,43 @@
         android:id="@+id/sexual"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="性别" />
+        android:hint="Sexual" />
 
     <EditText
         android:id="@+id/name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="昵称" />
+        android:hint="Nickname" />
 
     <EditText
         android:id="@+id/height"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="身高" />
+        android:hint="Height" />
 
     <EditText
         android:id="@+id/weight"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="体重" />
+        android:hint="Weight" />
 
     <EditText
         android:id="@+id/mywords"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="一句话自我介绍" />
+        android:hint="Signature" />
 
     <EditText
         android:id="@+id/classname"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="所在学院" />
+        android:hint="School" />
 
     <Button
         android:id="@+id/finish"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="修改完成" />
+        android:text="Edit Complete" />
 
 
 </LinearLayout>

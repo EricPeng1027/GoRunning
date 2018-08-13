@@ -11,7 +11,7 @@ import butterknife.OnClick;
 import io.rong.imkit.RongIM;
 
 /**
- * Created by Administrator on 2016/4/9.
+ * Created by Administrator on 2018/7/10.
  */
 public class FriendStatusActivity extends Activity {
 

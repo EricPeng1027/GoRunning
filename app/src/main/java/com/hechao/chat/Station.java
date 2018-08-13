@@ -4,7 +4,7 @@ import java.io.Serializable;
 import java.util.ArrayList;
 
 /**
- * Created by Administrator on 2016/3/30.
+ * Created by Administrator on 2018/7/10.
  */
 public class Station implements Serializable{
 

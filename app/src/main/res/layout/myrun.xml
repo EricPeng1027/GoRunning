@@ -36,38 +36,35 @@
 
 
     <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:id="@+id/seemydata"
-        android:text="我的主页"
-        android:background="#722"
-        />
-
-    <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="#722"
+        android:text="My Page" />
+
+    <Button
         android:id="@+id/runrecord"
-        android:text="我的跑步记录"
-        android:layout_marginTop="5dp"
-        android:layout_marginBottom="5dp"
-        android:background="#722"
-        />
-
-    <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/setting"
-        android:text="设置"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
         android:background="#722"
-        />
+        android:text="My Running Record" />
+
     <Button
+        android:id="@+id/setting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#722"
+        android:text="Settings" />
+
+    <Button
+        android:id="@+id/logout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="3dp"
-        android:id="@+id/logout"
-        android:text="退出"
         android:background="#722"
-        />
+        android:text="Logout" />
 
 
 

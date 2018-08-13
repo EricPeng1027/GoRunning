@@ -27,7 +27,7 @@ import butterknife.OnClick;
 import cz.msebera.android.httpclient.Header;
 
 /**
- * Created by Administrator on 2016/4/9.
+ * Created by Administrator on 2018/7/10.
  */
 public class Register1 extends Activity {
 
@@ -59,7 +59,7 @@ public class Register1 extends Activity {
 
         codenum = (int) Math.random() * 1000;
         SMSAPIDeal();
-        getcode.setText("耐心等待10s");
+        getcode.setText("Please wait 10s");
         getcode.setClickable(false);
 
     }
@@ -76,13 +76,13 @@ public class Register1 extends Activity {
         //    设置Title的图标
         builder.setIcon(R.drawable.rc_progress_sending_style);
         //    设置Title的内容
-        builder.setTitle("正在提交");
+        builder.setTitle("Submitting");
         builder.show();
 
 
         Log.e("hechao", "register clicked");
         if (username.getText().toString() == "" || password.getText().toString() == "") {
-            Toast.makeText(Register1.this, "手机号码不能为空", Toast.LENGTH_SHORT).show();
+            Toast.makeText(Register1.this, "Phone number cannot be empty", Toast.LENGTH_SHORT).show();
         } else {
 
             if (code.getText().toString().equals("" + codenum)) {
@@ -150,7 +150,7 @@ public class Register1 extends Activity {
         RequestParams params = new RequestParams();
         params.put("apikey", "34ca0f7732b7f0718ad418e3e7d6ed08");
         params.put("mobile", username.getText().toString());
-        params.put("text", "【纺大阳光】你好，请保存此验证码" + codenum + "，作为入场的唯一凭证，请妥善保管！");
+        params.put("text", "Hello, please keep this code" + codenum + "，as the only receipt");
         String url = "https://sms.yunpian.com/v1/sms/send.json";
 
         Log.e("hechao", "begin sms...");

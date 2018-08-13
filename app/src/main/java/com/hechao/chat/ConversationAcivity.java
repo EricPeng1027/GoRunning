@@ -9,7 +9,7 @@ import io.rong.imkit.RongIM;
 
 /**
  * 私聊窗口
- * Created by Administrator on 2016/3/25.
+ * Created by Administrator on 2018/7/10.
  */
 public class ConversationAcivity extends ActionBarActivity {
 

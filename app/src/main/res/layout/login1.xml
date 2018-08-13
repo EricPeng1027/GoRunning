@@ -16,43 +16,43 @@
 
 
     <EditText
+        android:id="@+id/user_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="50dp"
         android:elevation="10dp"
-        android:id="@+id/user_name"
         android:ems="15"
-        android:hint="请输入手机号"
+        android:hint="Please enter phone number"
         android:textColor="#aaa" />
 
     <EditText
+        android:id="@+id/password"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="10dp"
-        android:id="@+id/password"
         android:elevation="10dp"
         android:ems="15"
-        android:hint="请输入登陆密码" />
+        android:hint="Please enter password" />
 
     <Button
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="10dp"
-        android:background="#722"
         android:id="@+id/login"
-        android:text="登陆" />
-
-    <Button
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="10dp"
-        android:id="@+id/gotoRegister"
         android:background="#722"
-        android:text="新用户注册" />
+        android:text="Login" />
+
+    <Button
+        android:id="@+id/gotoRegister"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="#722"
+        android:text="Register" />
 
 
     <TextView

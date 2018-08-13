@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.os.Handler;
 
 /**
- * Created by Administrator on 2016/4/18.
+ * Created by Administrator on 2018/7/10.
  */
 public class SplashActivity extends Activity {
 

@@ -24,7 +24,7 @@ import cz.msebera.android.httpclient.Header;
 import io.rong.imkit.RongIM;
 
 /**
- * Created by Administrator on 2016/4/12.
+ * Created by Administrator on 2018/7/10.
  */
 public class FriendProfile extends Activity {
 
@@ -154,9 +154,9 @@ public class FriendProfile extends Activity {
             public void onSuccess(int i, Header[] headers, byte[] bytes) {
                 String response = new String(bytes);
 
-                Toast.makeText(FriendProfile.this,"添加成功",Toast.LENGTH_SHORT).show();
-                Log.e("hechao", response);
-                friendname.setText("你们已经成为好友");
+                Toast.makeText(FriendProfile.this,"Added Successfully",Toast.LENGTH_SHORT).show();
+                Log.e("Eric", response);
+                friendname.setText("You've become friends");
                 friendname.setTextColor(getResources().getColor(R.color.abc_primary_text_disable_only_material_light));
 
                 onCreate(null);
@@ -192,12 +192,12 @@ public class FriendProfile extends Activity {
                 try {
                     JSONObject jsonObject = new JSONObject(response);
 
-                    Log.e("hechao", jsonObject.toString());
+                    Log.e("Eric", jsonObject.toString());
                     String p1 = jsonObject.getString("name");
                     String p2 = jsonObject.getString("sexual");
                     textView1.setText(p2);
 
-                    friendname.setText("欢迎来到 " + p1 + " 的主页");
+                    friendname.setText("Welcome to" + p1 + " profile");
                     name = p1;
                     String p3 = jsonObject.getString("age");
 
@@ -206,13 +206,13 @@ public class FriendProfile extends Activity {
                     String p5 = jsonObject.getString("class");
                     textView2.setText("" + p5);
                     String p6 = jsonObject.getString("totaldistance");
-                    textView4.setText("跑步总里程：" + p6 + "千米");
+                    textView4.setText("Total Distance：" + p6 + "km");
                     String p7 = jsonObject.getString("totaltime");
-                    textView5.setText("投入时间：" + p7 + "秒");
+                    textView5.setText("Time Spended：" + p7 + "sec");
                     String p8 = jsonObject.getString("totalenergy");
-                    textView7.setText("甩掉的肥肉：" + p8 + " 斤");
+                    textView7.setText("Weight lost：" + p8 + "g");
                     String p9 = jsonObject.getString("totalrunning");
-                    textView6.setText("跑步总次数：" + p9 + " 次");
+                    textView6.setText("Total running times：" + p9 + " times");
 
 
                 } catch (JSONException e) {

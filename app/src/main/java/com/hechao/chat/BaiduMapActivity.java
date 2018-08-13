@@ -296,10 +296,10 @@ public class BaiduMapActivity extends Activity {
     private class MyLocationListener implements BDLocationListener {
 
         public void onReceiveLocation(BDLocation location) {
-//            Log.e("hechao", "onReceive...");
+//            Log.e("Eric", "onReceive...");
             // map view 销毁后不在处理新接收的位置
             if (location == null || mMapView == null) {
-                Log.e("hechao", "location == null || mMapView == null ");
+                Log.e("Eric", "location == null || mMapView == null ");
                 return;
             }
 
@@ -351,13 +351,13 @@ public class BaiduMapActivity extends Activity {
             if (pts.size() >= 2) {
                 double d = com.baidu.mapapi.utils.DistanceUtil.getDistance(pts.get(pts.size() - 1), point);
                 totalDistance+=d;
-                Log.e("hechao", "跑了 " + totalDistance + " 米");
+                Log.e("Eric", "has run " + totalDistance + " meters");
 //                Toast.makeText(getApplicationContext(), "第" + i + "次跑了 " + d + " 米", Toast.LENGTH_SHORT).show();
 //                Toast.makeText(getApplicationContext(), "跑了 " + totalDistance + " 米", Toast.LENGTH_SHORT).show();
-                textView.setText("完成了： " + df.format(totalDistance)+ " 米");
+                textView.setText("finished： " + df.format(totalDistance)+ " meters");
                 int min=  (  (int)((n-currentTime)/1000)  /60 ) ;
                 int sec= (int) ((n-currentTime)/1000-min*60);
-                speed.setText("时间："+min +"min"+sec+"sec  \n"+"速度："+(double)(Math.round( totalDistance/min *100)/100.0)  +" 米/分钟");
+                speed.setText("time："+min +"min"+sec+"sec  \n"+"speed："+(double)(Math.round( totalDistance/min *100)/100.0)  +" m/min");
                 OverlayOptions ooPolyline = new PolylineOptions().width(20).color(0xAAFF0000).points(pts);
                 //添加到地图
                 mBaiduMap.addOverlay(ooPolyline);
@@ -517,7 +517,7 @@ public class BaiduMapActivity extends Activity {
                 .bgColor(0xAAFFFF00)
                 .fontSize(24)
                 .fontColor(0xFFFF00FF)
-                .text("百度地图SDK")
+                .text("BaiduMapSDK")
                 .rotate(-30)
                 .position(llText);
 //在地图上添加该文字对象并显示

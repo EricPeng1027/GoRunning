@@ -7,48 +7,47 @@
 
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_marginTop="100dp"
-        android:layout_height="wrap_content"
         android:id="@+id/p_nicheng"
-        android:text="昵称"
-        />
-    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="Nickname" />
+
+    <TextView
         android:id="@+id/p_class"
-        android:text="学院"
-        />
-    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:text="School" />
+
+    <TextView
         android:id="@+id/p_mywords"
-        android:text="个人签名"
-        />
-    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:text="Signature" />
+
+    <TextView
         android:id="@+id/p_totaldistance"
-        android:text="跑步总距离"
-        />
-    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:text="Total Running Distance" />
+
+    <TextView
         android:id="@+id/p_totaltime"
-        android:text="跑步总耗时"
-        />
-    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:text="Total Running Time" />
+
+    <TextView
         android:id="@+id/p_totalCount"
-        android:text="跑步总次数"
-        />
-    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:text="Total Running Times" />
+
+    <TextView
         android:id="@+id/p_totalEnergy"
-        android:text="消耗的总能量（折合脂肪： 公斤）"
-        />
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calory lost (Weight lost: kg)" />
 
     
     
